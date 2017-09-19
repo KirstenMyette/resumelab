@@ -1,0 +1,13 @@
+nav {
+    background-color: #76B2C3;
+    color:white;
+    font-size: 12px;
+}
+h1, h3, h4 {
+    font-weight:bold;
+}
+
+h3 {
+    border-top-color: darkgray;
+    border-bottom-color: darkgray; 
+}
