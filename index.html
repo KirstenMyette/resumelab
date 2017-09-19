@@ -1,11 +1,13 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-   <title>Kirsten Myette Resume Lab</title>
-   <link href="styles.css" type="text.css" rel="stylesheet"/> 
+    <title>Kirsten Myette Resume Lab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <nav> 
+    <nav class="button">
         <a href="#">About</a>
         <a href="#">Skills</a>
         <a href="#">Projects</a>
@@ -15,44 +17,75 @@
     <h1>Kirsten Myette</h1>
     <h4>Front End Engineer</h4>
     <h3>About Me</h3>
-    
-      <p> Once upon a time, I was born in California. Due to the weather pattern "El Nino" my family was compelled to move to the small town of Harrisonville, Missouri in 1999. I played volleyball and softball and had enough skill and potential to possibly get a scholarship one day and attend a four year college. However fate is fickle and due to my mothers' third husband getting a job at UAB, we were once again relocated to good ol Birmingham, Alabama. It was here that I attented Oak Mountain High School and graduated in 2008 (just barely). Since then I have been working at several low wage jobs that just didn't cut it. I heard about Innovate Birmingham through a good friend of mine who saw a story on the local news. She encouraged me to sign up and through perseverence I was accepted. 
-      </p>
-
+    <div class="about">
+        <p class="left"> Once upon a time, I was born in California. Due to the weather pattern "El Nino" my family was compelled to move
+            to the small town of Harrisonville, Missouri in 1999. I played volleyball and softball and had enough skill and
+            potential to possibly get a scholarship one day and attend a four year college. However fate is fickle and due
+            to my mothers' third husband getting a job at UAB, we were once again relocated to good ol Birmingham, Alabama.
+        </p>
+        <p class="right">It was here that I attented Oak Mountain High School and graduated in 2008 (just barely). Since then I have been
+            working at several low wage jobs that just didn't cut it. I heard about Innovate Birmingham through a good friend
+            of mine who saw a story on the local news. She encouraged me to sign up and through perseverence I was accepted.
+        </p>
+    </div>
+    <div class="clear"></div>
     <h3>Technical Skills</h3>
-      <p>HTML, CSS, Javascript, Bootstrap, JQuery, LESS, Git, NFM, AFIs, REST, Typescript, NodeJS/Express, NoSQL, SQL Databases, Angular, Materialize, Mobile Design 
-      </p>
-
+    <p class="left">HTML, CSS, Javascript, Bootstrap, JQuery, LESS, Git
+    </p>
+    <p class="right">AFIs, REST, Typescript, NodeJS/Express, NoSQL, SQL Databases, Angular, Materialize, Mobile Design
+    </p>
+    <div class="clear"></div>
     <h3>Projects</h3>
-        
-        <p>Meme It Up</p>
-        <p>Some of my favorite memes come from 9gag.com however the internet has become so innndated with memes that it's hard to keep up with all the new memes coming out. Some of my favorites are the rage face meme's</p>
 
-        <p>Using All Them Keys</p>
-        <p>The quick brown fox jumps over the lazy fox. The quickest of them all gets away with the hens. The slowest red fox is only caught with a glimps.</p>
-        
+    <p id="bold">Meme It Up</p>
+    <p>Some of my favorite memes come from 9gag.com however the internet has become so innndated with memes that it's hard to keep up with all the new memes coming out. Some of my favorites are the rage face meme's.</p>
+<br/>
+    <p id="bold">Using All Them Keys</p>
+    <p>The quick brown fox jumps over the lazy fox. The quickest of them all gets away with the hens. The slowest red fox is
+        only caught with a glimps.</p>
+
     <h3>Experience</h3>
-        <p>Being Awesome </p>
-        <p id="time">March 6, 1990-Present</p>
-        <p>Can't stop won't stop</p>
-        <br/>
-        
-        <p>TV Watcher</p>
-        <p id="time">Since "Dad's on a hunting trip and he hasn't been home in a few days"</p>
-        <p>I'm a big fan of Supernatural...</p>
-        <br/>
+    <p id="bold">Being Awesome </p>
+    <p id="time">March 6, 1990-Present</p>
+    <p>Can't stop won't stop</p>
+    <br/>
 
-        <p>Shift Leader </p>
-        <p id="time">January 16, 2017-Present </p>
-        <p>Cleaning up after kids and adults and getting paid for it</p>
-        <br/>
+    <p id="bold">TV Watcher</p>
+    <p id="time">Since "Dad's on a hunting trip and he hasn't been home in a few days"</p>
+    <p>I'm a big fan of Supernatural...</p>
+    <br/>
+
+
+    <p id="bold">Shift Leader </p>
+    <p id="time">January 16, 2017-Present </p>
+    <p>Cleaning up after kids and adults and getting paid for it</p>
+    <br/>
 
     <h3>Education</h3>
-      <p>Iambham second cohort</p>
-      <p>Some college</p>
-      <p>Oak Mountain High School </p>
+    <p>Iambham second cohort</p>
+    <p>Some college</p>
+    <p>Oak Mountain High School </p>
 
     <h3>Contact Me</h3>
-    <p> Insert responsive input box here </p>
+    <div id="form">
+    <form>
+        <ul class="form-style-1">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided"
+                    placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+            <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="email" name="field3" class="field-long" />
+            </li>
+            <li>
+                <label>Your Message <span class="required">*</span></label>
+                <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit" />
+            </li>
+        </ul>
+    </form>
+        </div>
 </body>
+
 </html>

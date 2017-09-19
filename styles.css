@@ -1,13 +1,145 @@
-nav {
-    background-color: #76B2C3;
-    color:white;
-    font-size: 12px;
+
+.button {
+    display:inline-block;
+    height: 70px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: #99C5D1;
+    font-size: 16px;
+    font:Helvetica, sans-serif;
 }
+
+/*button a:hover {
+    background-color:white;
+    color: #99C5D1;
+}
+
+button a.active {
+    background-color: #99C5D1;
+    color: orange;
+}
+*/
+p {
+   margin: 0;
+   padding: 0;
+}
+
 h1, h3, h4 {
+    text-align: center;
     font-weight:bold;
 }
 
+h4 {
+    line-height: 0.8;
+}
 h3 {
+    text-align: center;
+    border-width: medium;
+    border-style: solid;
     border-top-color: darkgray;
     border-bottom-color: darkgray; 
+    border-right-color:white;
+    border-left-color:white;
+    
+}
+
+#time {
+    color: #99C5D1;
+}
+
+.left {
+    text-align: justify;
+    position: relative;
+    float:left;
+    width:290px;
+    padding-left: 100px;
+}
+
+.right {
+    text-align: justify;
+    position: relative;
+    float:right;
+    width:290px;
+    padding-right: 100px;
+}
+
+.clear {
+    clear: both;    
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#form {
+    background-color: #99C5D1;
+    max-width: 600px;
+    margin:25px auto; 
+}
+
+.form-style-1 {
+    margin:10px auto;
+    /*max-width: 400px;*/
+    padding: 20px 10px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding-left: 32%;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+
+.form-style-1 .field-divided{
+    width: 50%;
+}
+
+.form-style-1 .field-long{
+    width: 50%;
+}
+.form-style-1 .field-select{
+    width: 50%;
+}
+.form-style-1 .field-textarea{
+    height: 50px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 80px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style-1 .required{
+    color:red;
 }
